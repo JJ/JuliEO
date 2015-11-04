@@ -18,7 +18,7 @@ length = 16
 iterations = 100000
 top_length = 32768
 
-while length < top_length
+while length <= top_length
   indi =  julieo.random_chromosome(length)
   println("julia-BitString, " * string(length) * ", " * string(time_mutations( iterations, indi )))
   length = length*2
