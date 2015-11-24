@@ -6,7 +6,7 @@ import julieo
 # Mutate and compute time
 function time_xover(number)
     inicioTiempo = time()
-    
+
     indi1 =  julieo.random_chromosome(length)
     indi2 =  julieo.random_chromosome(length)
     for i in 0:1:number
@@ -20,6 +20,6 @@ iterations = 100000
 top_length = 32768
 
 while length <= top_length
-  println("julia-BitString, " * string(length) * ", " * string(time_xover( iterations )))
+  println("julia-Xover, " * string(length) * ", " * string(time_xover( iterations )))
   length = length*2
 end
