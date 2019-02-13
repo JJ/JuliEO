@@ -3,6 +3,11 @@
 push!(LOAD_PATH, pwd() )
 import julieo
 
+global length = 16
+global iterations = 100000
+global top_length = 32768
+
+
 # Mutate and compute time
 function time_mutations(number)
   inicioTiempo = time()
@@ -15,9 +20,6 @@ function time_mutations(number)
 
 end
 
-length = 16
-iterations = 100000
-top_length = 32768
 
 while length <= top_length
 
